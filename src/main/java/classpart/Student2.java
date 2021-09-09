@@ -45,7 +45,7 @@ public class Student2 { //public (접근제어자)
 
         Student2 studentKim = new Student2(); //new 생성자(기본생성자)
                                               // 인스턴스가 assign된 변수 studentLee를 참조변수라한다
-        studentKim.studentName = "김유신";           //studentLee.---- 참조할 값들이 보인다
+        studentKim.studentName = "김유신";
         studentKim.studentID = 101;
         studentKim.address = "미국 산호세";
 
