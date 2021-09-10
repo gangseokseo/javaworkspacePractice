@@ -15,6 +15,7 @@ public class Circle {
                             //디폴트 생성자 안에 또 생성자를 만들 수도 있나?
                             //point = new Point(); 이 부분이 Point Class에 대해서 새로운 객체를 선언한 것
         //언제 객체선언할지를 정해야한다 유동적.
+        //다시?
     }
 
     public void test(){

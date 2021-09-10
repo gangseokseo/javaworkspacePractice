@@ -48,7 +48,8 @@ public class Student {
         //마지막 구조 바꾸기 Subject에 이름을 주고싶다
         //subject는 각각 이름을 주기보단 과목이름은 과목 생성할때 주는게 좋다. 학생마다 과목이 달라지지 않으니까
     }
-   //새 메서드
+   //새 메서드 set, get함수????????
+
     //학생의 한국어 과목에 대한 이름, 점수
     //코딩할때 학생을 먼저 생성해주고, 듣는 과목 세팅
     //setKorea함수를 부를 것이고. 자기가 가는 멤버변수 korea -> setSubjectName에서 name을 넣어라
@@ -59,6 +60,7 @@ public class Student {
 
     //수학점수(동일)
     public void setMath( int score){
+
         math.setScore(score);
     }
 
