@@ -11,6 +11,7 @@ public class Bus {
     //버스는 생성자 1개, 메서드2개
 
     public Bus(int busNumber){ //모든버스는 번호를 가져야지만 생성되니 매개변수 busNumber를 넣어준다)
+
         this.busNumber = busNumber;
     }
 

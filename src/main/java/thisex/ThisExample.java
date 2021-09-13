@@ -1,6 +1,7 @@
 package thisex;
 
-class Birthday{
+class Birthday{//자기자신에게 생성된 인스턴스 메모리를 가리키는 this
+    //객체를 코드로 만든 클래스
     //빈껍데기 클래스는 설계도
     int day;
     int month;
@@ -30,7 +31,7 @@ class Birthday{
 
 
 
-public class ThisExample {
+public class ThisExample { //this 출력값의 의미를 알기 위해 main()함수를 포함하여 만든 테스트용 클래스.
     public static void main(String[] args) {
 
         Birthday b1 = new Birthday();

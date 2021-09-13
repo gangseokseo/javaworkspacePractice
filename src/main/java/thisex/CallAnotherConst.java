@@ -1,6 +1,6 @@
 package thisex;
 
-class Person{
+class Person{ //생성자에 다른 생성자를 호출하는 this
 
     String name;
     int age;
