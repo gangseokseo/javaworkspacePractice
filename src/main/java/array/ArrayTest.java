@@ -7,7 +7,7 @@ public class ArrayTest {
         //배열 초기화
         int[] numbers = new int[3];
 
-        //또는 int[] numbers; //numbers라는 배열 타입만 선언
+        //또는 int[] numbers; //numbers 라는 배열 타입만 선언
         // numbers = new int[3];
 
         //또는 int[] numbers = {1, 2, 3}; // 먼저 타입만선언(배열변수선언) - 마지막으로 new하고 나서 배열 초기화 가능

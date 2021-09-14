@@ -1,6 +1,7 @@
 package reference;
 
 public class Circle {
+    //클래스와 객체 2
     //참조자료형 변수
 
     //x,y 직접 선언할 수 있지만,Point 클래스에서 가져온다 point x, point y로 '선언'
