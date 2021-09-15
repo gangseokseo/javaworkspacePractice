@@ -16,6 +16,7 @@ public class ArrayTest {
         numbers[1] = 2;
         numbers[2] = 3;
 
+        // 배열 초기화 후 출력 - 배열의 1번째 요소부터 3번째까지 요소값 출력
         for(int i = 0; i < numbers.length; i++){
             System.out.println(numbers[i]); //1 ,2 ,3
 
