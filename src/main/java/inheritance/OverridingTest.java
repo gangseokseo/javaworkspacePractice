@@ -16,11 +16,14 @@ public class OverridingTest {
 
         //VIPCustomer 로 생성하고 Customer 타입으로 대입을 한다 (오버라이딩 - 묵시적 형변환)
      Customer customerWho = new VIPCustomer(100010, "Who", 100);
-     int price = customerWho.calcPrice(10000); //who가 얼마를 내는가 10000
+     int price = customerWho.calcPrice(10000); //who가 얼마를 내는가 10000 //calcPrice 어떤메서드가 호출되는가? VIPCustomer 클래스가 호출된다
         System.out.println("지불 금액은" + price + "이고," + customerWho.showCustomerInfo());; //적립되는 보너스 포인트?
 
-    //항상 참조변수가 참조할 수 있는 내용은 자료형(타입)Customer 만 할 수 있다
-    //customerWho. -> 가상함수
+        //customerWho. -> 항상 참조변수가 참조할 수 있는 내용은 자료형(타입)Customer 만 할 수 있다
+        // 그래서 calcPrice 참조했는데 불려지는건 인스턴스 VIPCustomer
+       //customerWho. -> 가상함수
+
+        Customer customerGold = new GoldCustomer();
 
     }
 }

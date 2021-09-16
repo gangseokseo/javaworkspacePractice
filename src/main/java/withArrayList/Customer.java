@@ -1,5 +1,6 @@
-package inheritance;
+package withArrayList;
 
+//다형성
 public class Customer {
 //상속 - 공유되는 내용만
     protected int customerID;

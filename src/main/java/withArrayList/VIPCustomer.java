@@ -1,17 +1,16 @@
-package inheritance;
+package withArrayList;
+
+//다형성 - GoldCustomer  vip 등급과 일반등급 사이에 하나의등급을 추가해라
 
 public class VIPCustomer extends Customer {
 //상속 - 추가되는 내용만
 
     //상위클래스 Customer 에 있는 멤버변수들을 가져다 사용가능하기에 여기에서는 생략가능하다.
 
-    private double saleRatio; //할인율
+    double saleRatio; //할인율
     private int agentID; //담당 상담원 ID
 
     public VIPCustomer() {  // 디폴트 생성자- 고객 처음 생성
-
-        //super(0, null); //생성자 호출 ->매개변수가 없다 ->상위클래스 기본 생성자 호출 // 자기 바로 위 상위 클래스를 가리키는 참조자를 가지고있는 키워드
-        // 없어도 호출 가능
 
         customerGrade = "VIP";
         bonusRatio = 0.05;
@@ -42,7 +41,8 @@ public class VIPCustomer extends Customer {
         return agentID;
     }
 
-    //오버라이딩때 구현하도록 한다
+
+    //calcPrice, showCustomerInfo 재정의 2개
 
     //지불가격 계산 메서드
     //메소드 오버라이딩(덮어썼다)
@@ -53,5 +53,14 @@ public class VIPCustomer extends Customer {
        return price - (int)(price * saleRatio); //지불가격
     }
 
+    //재정의
+    @Override
+    public String showCustomerInfo() {
+        return super.showCustomerInfo() + "담당상담원 아이디는" + agentID + "입니다";
+        //super가 있어야 상위클래스를 사용한다(없으면 자기것을 무한루프)
+        //구하려는거 agentID
 
+    }
+
+    //VIPCustomer들의 다른정보는 상위클래스 것을쓴다
 }
