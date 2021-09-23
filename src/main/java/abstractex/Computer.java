@@ -21,8 +21,8 @@ public abstract class Computer { //추상메서드를 가졌으니 추상클래�
 
      */
 
-    //2개의 구현된 메서드- 하위클래스(상속받은 클래스)에서 구현을 한다
-   public void turnOn(){
+    //2개의 구현된 일반메서드-구현코드는 공통이다.
+    public void turnOn(){
         System.out.println("전원을 켭니다");
     }
 
