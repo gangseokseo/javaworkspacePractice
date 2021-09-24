@@ -15,4 +15,21 @@ public interface Calc {
     int substract(int num1, int num2);
     int times(int num1, int num2);
     int divide(int num1, int num2);
+
+    //인터페이스 활용하기 수업 - 하나의 인터페이스가 여러 클래스들로 구현 //1.디폴트 메서드 정의
+    default void description(){
+        System.out.println("정수 계산기를 구현합니다");
+    }
+
+    //인터페이스 활용화기 수업 - 정적 메서드 static // static 키워드를 가지면 인스턴스 생성과 상관없이 사용할 수 있다
+    //array의 모든 합
+    static int total(int[] arr){
+        int total = 0;
+
+        for (int i:arr){
+            total +=i;
+        }
+        return  total;
+    }
+
 }
