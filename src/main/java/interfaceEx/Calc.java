@@ -21,7 +21,7 @@ public interface Calc {
         System.out.println("정수 계산기를 구현합니다");
     }
 
-    //인터페이스 활용화기 수업 - 정적 메서드 static // static 키워드를 가지면 인스턴스 생성과 상관없이 사용할 수 있다
+    //인터페이스 활용하기 수업 - 정적 메서드 static // static 키워드를 가지면 인스턴스 생성과 상관없이 사용할 수 있다
     //array의 모든 합
     static int total(int[] arr){
         int total = 0;
